@@ -23,7 +23,7 @@ function Statistics() {
     return accumulator;
   }, {});
 
-  let maxCategory = Object.entries(categoryExpenses).sort(
+  let maxCategory = Object.keys(categoryExpenses).length === 0 ? null : Object.entries(categoryExpenses).sort(
     ([aKey, aValue], [bKey, bValue]) => aValue < bValue
   )[0][0];
 
@@ -31,7 +31,7 @@ function Statistics() {
     <Paper sx={{ padding: 2, boxShadow: 3, borderRadius: 2 }}>
       <Typography variant="h6">Key Statistics</Typography>
       <Typography>
-        Average Daily Expense: {averageDailyExpense.toFixed(2)} €
+        Average Daily Expense: {isNaN(averageDailyExpense) ? "0" : averageDailyExpense.toFixed(2)} €
       </Typography>
       <Typography>
         Highest Spending Category:{" "}
