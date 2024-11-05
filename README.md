@@ -1,6 +1,8 @@
+# A continuación se muestra un pequeño fragmento en el que muestro la aplicación funcionando con el código que he desarrollado
+
 https://github.com/user-attachments/assets/e9d2bc49-3a9c-46ad-af55-eaa11ce4892a
 
-# -------------------------
+# --------------------------------------------------
 
 # 🏦 The Game is HackathON React Frontend Challenge ⚛️
 
